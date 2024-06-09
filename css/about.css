@@ -1,0 +1,129 @@
+.about {
+    margin-top: 80px;
+    position: relative;
+    height: 100vh;
+    width: 100vw; /* Ширина блока равна 100% ширины вьюпорта */
+    height: 100vh; /* Высота блока равна 100% высоты вьюпорта */
+    max-width: 100%; /* Максимальная ширина блока не превышает ширину вьюпорта */
+    max-height: 100%;
+}
+
+.about-titles {
+    margin-left: 60px;
+}
+
+.about-block-sabtitles {
+    margin-left: 60px;
+    max-width: 497px;
+    position: relative;
+}
+
+.about-block {
+    margin-top: 3%;
+    display: flex;
+    column-gap: 10%;
+}
+
+.about-block-items {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20%;
+}
+
+.about-block-sabtitles span {
+    position: absolute;
+    width: 353.39px;
+    height: 34.44px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    background-color: var(--prColor02);
+    rotate: -1.69deg;
+    left: 60px;
+    top: 100px;
+    z-index: -100;
+}
+
+.about-block-items__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    width: 360px;
+}
+
+.about-block-items__item img {
+    width: 100px;
+}
+
+.about-img-element {
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.about-img-element img {
+    width: 100%;
+}
+
+@media (max-width: 375px) {
+    .about{
+        margin: 20px 20px;
+        height: 1050px;
+    }
+    .about-titles {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42.4px;
+    }
+    .about-block {
+        flex-direction: column;
+    }
+
+    .about-block-sabtitles {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        max-width: 320px;
+    }
+    .about-block-sabtitles span {
+        width: 235px;
+        height: 29px;
+        top: 75px;
+        left: 0px;
+    }
+    .about-img-element {
+        display: none;
+    }
+    .about-block-items__item-title{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 33.92px;
+        max-width: 200px;
+    }
+    .about-block-items__item-subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+
+    }
+    .about-block-items__item img {
+        width: 80px;
+    }
+    .about-block-items {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-top: 15%;
+    }
+    .about-block-items__item-description{
+        max-width: 300px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.16px;
+    }
+}

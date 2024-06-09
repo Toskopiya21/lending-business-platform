@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Title */
+    --fontFamily: "Outfit";
+    /* Colors */
+    /* Grayscale */
+    --gsColor00: #000000;
+    --gsColor01: #181818;
+    --gsColor02: #444444;
+    --gsColor03: #B9B9B9;
+    --gsColor04: #CFCFCF;
+    --gsColor05: #E4E4E4;
+    --gsColor06: #F5F5F5;
+    --gsColor07: #FFFFFF;
+    /* Primary */
+    --prColor00: #7B31D4;
+    --prColor01: #954CED;
+    --prColor02: #A64CED;
+    --prColor03: #BA8BF3;
+    --prColor04: #954CED33;
+    /* Secondary */
+    --scdColor01: #2FDBBC;
+    --scdColor02: #FFAA4C;
+    --scdColor03: #C1DB2F;
+    /* Additional */
+    --adtColor01: #FF6C2D;
+    --adtColor02: #EC1211;
+}
+
+/* typography */
+:root {
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+    --font-weight-medium: 500;
+}
+
+.ui-typography-t1,
+.ui-typography-t2,
+.ui-typography-t3,
+.ui-typography-t4,
+.ui-typography-t6,
+.ui-typography-t7 {
+    font-weight: var(--font-weight-bold);
+}
+
+.ui-typography-t5,
+.ui-typography-s1,
+.ui-typography-s2,
+.ui-typography-s4,
+.ui-typography-b1,
+.ui-typography-b3 {
+    font-weight: var(--font-weight-semibold);
+}
+
+.ui-typography-s3,
+.ui-typography-s6,
+.ui-typography-b2,
+.ui-typography-b4 {
+    font-weight: var(--font-weight-regular);
+}
+
+.ui-typography-s5 {
+    font-weight: var(--font-weight-medium);
+}
+
+.ui-typography-s7,
+.ui-typography-b5,
+.ui-typography-b6 {
+    font-weight: var(--font-weight-light);
+}
+
+.ui-typography-t1 {
+    font-size: 128px;
+    line-height: 135.68px;
+}
+
+.ui-typography-t2 {
+    font-size: 96px;
+    line-height: 101.76px;
+}
+
+.ui-typography-t3 {
+    font-size: 64px;
+    line-height: 67.84px;
+}
+
+.ui-typography-t4 {
+    font-size: 48px;
+    line-height: 50.88px;
+}
+
+.ui-typography-t5 {
+    font-size: 48px;
+    line-height: 60.48px;
+}
+
+.ui-typography-t6 {
+    font-size: 40px;
+    line-height: 42.4px;
+}
+
+.ui-typography-t7 {
+    font-size: 32px;
+    line-height: 33.92px;
+}
+
+.ui-typography-s1 {
+    font-size: 36px;
+    line-height: 45.36px;
+}
+
+.ui-typography-s2 {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.ui-typography-s3 {
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+.ui-typography-s4 {
+    font-size: 20px;
+    line-height: 25.2px;
+}
+
+.ui-typography-s5 {
+    font-size: 20px;
+    line-height: 25.2px;
+}
+
+.ui-typography-s6 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ui-typography-s7 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.ui-typography-b1 {
+    font-size: 16px;
+    line-height: 20.16px;
+}
+
+.ui-typography-b2 {
+    font-size: 16px;
+    line-height: 20.16px;
+}
+
+.ui-typography-b3 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.ui-typography-b4 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.ui-typography-b5 {
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.ui-typography-b6 {
+    font-size: 14px;
+    line-height: 19.6px;
+}
+
+.ui-typography-b7 {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+@media screen and (max-width: 375px) {}
+
+.ui-btn-primary {
+    /* height: 57px; */
+    top: 7px;
+    left: 1198px;
+    padding: 16px 30px 16px 30px;
+    gap: 14px;
+    border-radius: 16px;
+    opacity: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+    background-color: var(--prColor01);
+    color: var(--gsColor07);
+    cursor: pointer;
+    border: 0px;
+}
+
+.ui-btn-primary:hover {
+    background-color: var(--gsColor01);
+    /* width: 200px; */
+    /* height: 67px; */
+    top: 315px;
+    left: 73px;
+    padding: 16px 30px 16px 30px;
+    gap: 14px;
+    border-color: #2FDBBC;
+    opacity: 0px;
+    box-shadow: inset 0 0 0 2px var(--prColor01);
+    scale: 1.04;
+    transition: all .3s;
+}
+
+.ui-btn-primary:active {
+    background-color: var(--prColor00);
+    box-shadow: inset 0 0 0 0px;
+}
+
+.ui-btn-primary:disabled {
+    background-color: var(--gsColor03);
+}
+
+.ui-btn-primary:disabled:hover {
+    scale: 1;
+    background-color: var(--gsColor03);
+    box-shadow: inset 0 0 0 0px var(--prColor01);
+}
+
+@media screen and (max-width: 450px) {
+    .ui-typography-t2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42.4px;
+    }
+
+    .ui-btn-primary {
+        width: 343px;
+        height: 57px;
+        padding: 16px 30px 16px 30px;
+        gap: 14px;
+        opacity: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: center;
+    }
+
+
+}

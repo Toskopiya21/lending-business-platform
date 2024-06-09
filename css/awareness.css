@@ -1,0 +1,178 @@
+.awareness {
+    margin-top: 0%;
+    max-height: 1440px;
+    background-color: var(--gsColor07);
+    color: var(--gsColor00);
+    display: flex;
+    flex-direction: column;
+    row-gap: 600px;
+}
+
+.awareness div {
+    margin-top: 3%;
+}
+
+.awareness-contact {
+    position: relative;
+    margin-top: 200px;
+    height: 285px;
+    max-width: 1720px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 60px;
+    border: 1px solid var(--gsColor04);
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    gap: 40px;
+    margin: 100px 5%;
+}
+
+.awareness-contact__btn {
+    align-self: center;
+}
+
+.awareness-about {
+    display: flex;
+}
+
+
+.awareness-about__description {
+    margin: 100px 5%;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 822px;
+
+}
+
+.awareness-logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 40px;
+    max-width: 300px;
+}
+
+.awareness-logos img:nth-child(1) {
+    /* position: absolute; */
+    position: relative;
+    top: -80px;
+    left: 0;
+}
+
+.awareness-logos img:nth-child(2) {
+    /* position: absolute; */
+    position: relative;
+
+    top: 50px;
+    left: 80px;
+}
+
+.awareness-logos img:nth-child(3) {
+    /* position: absolute; */
+    position: relative;
+
+    top: -80px;
+    left: 160px;
+}
+
+.awareness-logos img:nth-child(4) {
+    /* position: absolute; */
+    position: relative;
+
+    top: 50px;
+    left: 240px;
+}
+.awareness-about__description-title {
+    width: 955px;
+}
+.awareness-about__description-subtitle {
+    width: 537px;
+}
+.awareness-company {
+    margin: 100px 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 375px) {
+    .awareness-about__description {
+        margin: 0 5%;
+    }
+
+    .awareness-about {
+        flex-direction: column;
+
+    }
+
+    .awareness {
+        flex-direction: column;
+    }
+
+    .awareness-contact__title {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42.4px;
+        text-align: center;
+        max-width: 303px;
+    }
+
+    .awareness-logos {
+        max-width: 340px;
+        max-width: 340px;
+        position: relative;
+        width: 30%;
+        scale: 0.67;
+        top: -50px;
+    }
+
+    .awareness-logos {
+        height: 200px;
+    }
+
+    .awareness-company img {
+        max-width: 340px;
+        width: 40%;
+        top: 0;
+    }
+
+    .awareness-contact__btn {
+        align-self: center;
+        max-width: 303px;
+
+    }
+
+    .awareness-about__description {
+        row-gap: 20px;
+    }
+
+    .awareness-about__description-title {
+        width: 355px;
+    }
+
+    .awareness-about__description-subtitle {
+        max-width: 340px;
+    }
+
+    .awareness-contact {
+        margin: 0 5%
+    }
+
+    .awareness-about__description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .awareness-company {
+        height: 200px;
+        width: 343px;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        column-gap: 30px;
+        /* max-height: 1000px; */
+    }
+}
