@@ -2,14 +2,16 @@
     margin-top: 80px;
     position: relative;
     height: 100vh;
-    width: 100vw; /* Ширина блока равна 100% ширины вьюпорта */
-    height: 100vh; /* Высота блока равна 100% высоты вьюпорта */
-    max-width: 100%; /* Максимальная ширина блока не превышает ширину вьюпорта */
+    width: 100vw; 
+    height: 100vh; 
+    max-width: 100%; 
     max-height: 100%;
+    
 }
 
 .about-titles {
     margin-left: 60px;
+    
 }
 
 .about-block-sabtitles {

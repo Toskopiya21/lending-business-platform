@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/awareness.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/modalContact.css">
     <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -40,7 +41,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="container">
+            <!-- <div class="container"> -->
                 <div class="header-top">
                     <button class="header-top__btn-active">For Business</button>
                     <button class="header-top__btn-disable">For Customers</button>
@@ -49,7 +50,7 @@
                     <a href=""><img src="./img/mainLogo.png" alt="budss"></a>
                     <button class="header-bottom-ui ui-btn-primary"><span>Contact sales</span></button>
                     <button class="header-bottom-burger"><img src="./img/burger.png" alt="burger"></button>
-                </div>
+                <!-- </div> -->
             </div>
         </header>
         <section class="greeting">
@@ -272,52 +273,76 @@
     </div>
     <!-- modal window -->
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="modal" class="modal">
 
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-content__header">
-                <span class="close">&times;</span>
+                <span class="close" id="close">&times;</span>
             </div>
             <div class="modal-content__body">
                 <div>
                     <p class="modal-content__body-name ui-typography-b3">Name <span>*</span></p>
                     <input type="text" placeholder="Enter name" id="name">
-                    <div id="name-error-message"></div>
+                    <p id="name-error-message" class="ui-typography-b2 error"></p>
                 </div>
                 <div>
                     <p class="modal-content__body-email ui-typography-b3">Email <span>*</span></p>
-                    <input class="modal-content__body-company__input ui-typography-b4" id="email" type="text" placeholder="Enter email">
-                    <div id="email-error-message"></div>
-                
+                    <input class="modal-content__body-company__input ui-typography-b4" id="email" type="text"
+                        placeholder="Enter email">
+                    <p id="email-error-message" class=" ui-typography-b2 error"></p>
+
                 </div>
                 <div>
                     <p class="modal-content__body-phone-number ui-typography-b3">Phone number <span>*</span></p>
-                    <input class="modal-content__body-company__input ui-typography-b4" id="phone" type="text" placeholder=" +7 900 000 00 00 ">
-                    <div id="phone-error-message"></div>
+                    <input class="modal-content__body-company__input ui-typography-b4 phone" id="phone" type="text"
+                        placeholder=" +7 900 000 00 00 ">
+                    <p id="phone-error-message" class="ui-typography-b2 error"></p>
                 </div>
                 <div>
                     <p class="modal-content__body-company ui-typography-b3">Company</p>
-                    <input class="modal-content__body-company__input ui-typography-b4" type="text" placeholder="Enter company">
+                    <input class="modal-content__body-company__input ui-typography-b4" type="text"
+                        placeholder="Enter company">
                 </div>
                 <div>
                     <p class="modal-content__body-website ui-typography-b3">Website/Store URL</p>
-                    <input class="modal-content__body-company__input ui-typography-b4"  type="text" placeholder="Enter Website/Store URL">
+                    <input class="modal-content__body-company__input ui-typography-b4" type="text"
+                        placeholder="Enter Website/Store URL">
                 </div>
                 <div>
-                    <p class="modal-content__body-sourse ui-typography-b5">By submitting this form you are agreeing to Budss's <a>Privacy
+                    <p id="error-message" class="ui-typography-b2 error"></p>
+                    <p class="modal-content__body-sourse ui-typography-b5">By submitting this form you are agreeing to
+                        Budss's <a>Privacy
                             Policy</a> and
                         <a>Terms of Use</a>
                     </p>
-                    <button class="ui-btn-primary modal-content__body-btn" id="submit"  onclick="validForm()">Contact sales</button>
+                    <button class="ui-btn-primary modal-content__body-btn" id="submit">Contact sales</button>
                 </div>
-
             </div>
         </div>
-
     </div>
+
+    <!-- The Modal -->
+    <div id="modalSuccessfully" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content-successfully">
+            <div class="modal-content__header">
+                <span class="close" id="closeModalSuc">&times;</span>
+            </div>
+            <div class="modal-content__body">
+                <img class="modal-content__body-img"src="./img/successfully.png" alt="">
+                <p class="modal-content__body-title ui-typography-s1">Thank you!</p>
+                <p class="modal-content__body-massage ui-typography-s3">Thank you, we have received your
+                    application and will contact you soon!</p>
+                <button class="ui-btn-primary modal-content__body-btnSuccess" id="closeModalSuccess">Super!</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
     <script src="./js/modal.js"></script>
     <script src="./js/validForm.js"></script>
+    <script src="./js/fixHeader.js"></script>
 </body>
 
 </html>

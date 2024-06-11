@@ -1,12 +1,80 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Получаем элементы input и кнопку submit
   var nameInput = document.getElementById("name");
   var emailInput = document.getElementById("email");
   var phoneInput = document.getElementById("phone");
   var submitButton = document.getElementById("submit");
+
   var emailErrorMessage = document.getElementById("email-error-message");
   var nameErrorMessage = document.getElementById("name-error-message");
   var phoneErrorMessage = document.getElementById("phone-error-message");
+  var errorMessage = document.getElementById("error-message");
+
+  var btn = document.getElementsByClassName("modal-content__body-btn")[0];
+  var modal = document.getElementById("modal");
+  var modalSuccessfully = document.getElementById("modalSuccessfully");
+
+  var keyPhone = [
+    900, 902, 903, 904, 905, 906, 908, 909, 950, 951, 953, 960, 961, 962, 963,
+    964, 965, 966, 967, 968, 969, 980, 983, 986, 901, 910, 911, 912, 913, 914,
+    915, 916, 917, 918, 919, 978, 981, 982, 984, 985, 495, 987, 988, 989, 920,
+    921, 922, 923, 924, 925, 926, 927, 928, 929, 930, 931, 932, 933, 934, 936,
+    937, 938, 939, 999, 952, 958, 977, 991, 992, 993, 994, 995, 996,
+  ];
+
+  function valPhone() {
+    if (phoneInput.value.trim() === "") {
+      phoneErrorMessage.innerText = "Enter the phone number.";
+      return;
+    }
+    if (phoneInput.value.length != 12) {
+      phoneErrorMessage.innerText = "The number length is incorrect.";
+      console.log(phoneInput.value.length, phoneInput.value);
+      return;
+    }
+    if (keyPhone.includes(Number(phoneInput.value.slice(2, 5))) !== true) {
+      phoneErrorMessage.innerText = "Invalid area/operator code";
+      return;
+    }
+    phoneErrorMessage.innerText = "";
+  }
+
+  function valForm() {
+    nameInput.value.trim() === ""
+      ? (nameErrorMessage.innerText = "Enter a name.")
+      : (nameErrorMessage.innerText = "");
+    emailInput.value.trim() === ""
+      ? (emailErrorMessage.innerText = "Enter your email address.")
+      : (emailErrorMessage.innerText = "");
+
+    valPhone();
+
+    if (
+      nameInput.value.trim() !== "" &&
+      emailInput.value.trim() !== "" &&
+      phoneInput.value.trim() !== "" &&
+      phoneInput.value.trim().length === 12 &&
+      keyPhone.includes(Number(phoneInput.value.slice(2, 5)))
+    ) {
+      modal.style.display = "none";
+      modalSuccessfully.style.display = "block";
+    } else {
+      errorMessage.innerText = "Please fill in all required fields.";
+    }
+  }
+
+  // Функция для проверки полей input
+  function checkInputs() {
+    if (
+      nameInput.value.trim() !== "" &&
+      emailInput.value.trim() !== "" &&
+      phoneInput.value.trim() !== "" &&
+      phoneInput.value.trim().length === 12
+    ) {
+      btn.style.backgroundColor = "#954CED";
+    } else {
+      btn.style.backgroundColor = "#B9B9B9";
+    }
+  }
 
   phoneInput.addEventListener("input", function mask() {
     const phoneNumber = phoneInput.value.trim();
@@ -24,60 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  function valForm() {
-    console.log(phoneInput.value.trim());
-    nameInput.value.trim() === ""
-      ? (nameErrorMessage.innerText = "Введите имя")
-      : null;
-    emailInput.value.trim() === ""
-      ? (emailErrorMessage.innerText = "Введите почту")
-      : null;
-    phoneInput.length !== 11
-      ? (phoneErrorMessage.innerText = "Неверная длина номера")
-      : null;
-    phoneInput.value.trim() === ""
-      ? (phoneErrorMessage.innerText = "Введите номер телефона")
-      : null;
-    // if (
-    //   nameInput.value.trim() === "1" &&
-    //   emailInput.value.trim() === "1"
-    //   // &&
-    //   // phoneInput.value.trim() === "1"
-    // ) {
-    //   emailErrorMessage.innerText = "Введите почту";
-    //   nameErrorMessage.innerText = "Введите имя";
-    //   phoneErrorMessage.innerText = "Введите телефон";
-    // }
-  }
-
-  // Функция для проверки полей input
-  function checkInputs() {
-    if (
-      nameInput.value.trim() !== "" &&
-      emailInput.value.trim() !== "" &&
-      phoneInput.value.trim() !== ""
-    ) {
-      // submitButton.removeAttribute("disabled");
-    } else {
-      // submitButton.setAttribute("disabled", "disabled");
-    }
-  }
-
   // Добавляем слушателей событий на поля ввода
   nameInput.addEventListener("input", checkInputs);
   emailInput.addEventListener("input", checkInputs);
   phoneInput.addEventListener("input", checkInputs);
   submitButton.addEventListener("click", valForm);
 });
-// function validForm() {
-//   console.log("fgkflng");
-//   if (
-//     nameInput.value.trim() === "" &&
-//     emailInput.value.trim() === "" &&
-//     phoneInput.value.trim() === ""
-//   ) {
-//     emailErrorMessage.innerText = "Введите почту";
-//     nameErrorMessage.innerText = "Введите имя";
-//     phoneErrorMessage.innerText = "Введите телефон";
-//   }
-// }
