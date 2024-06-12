@@ -52,7 +52,7 @@
         margin-left: 10%;
     }
     .presentation__card {
-        margin-top: 10%;
+        margin-top: 20%;
         max-width: 600px;
     }
     .presentation__card-titles {
@@ -75,7 +75,7 @@
         margin-left: 10%;
     }
     .presentation__card {
-        margin-top: 10%;
+        margin-top: 20%;
         max-width: 500px;
     }
     .presentation__card-titles {
@@ -92,22 +92,22 @@
 
 @media (max-width: 700px) {
     .presentation__img img {
-        max-width: 400px;
+        /* max-width: 400px; */
     }
     .presentation {
         margin-left: 10%;
     }
     .presentation__card {
-        margin-top: 10%;
-        max-width: 343px;
+        margin-top: 20%;
+        /* max-width: 343px; */
     }
     .presentation__card-titles {
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
         line-height: 42.4px;
     }
     .presentation__card-sabtitles {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 22.16px;
     }
@@ -159,8 +159,9 @@
         font-weight: 300;
         line-height: 20.16px;
     }
-    .presentation__img {
+    .presentation__img img{
         max-width: 275px;
     }
+
 }
 

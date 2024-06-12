@@ -52,7 +52,7 @@
     top: 0; /* Прикрепляем шапку к верху страницы */
     left: 0; /* Прикрепляем шапку к левому краю страницы */
     width: 100%; /* Шапка растягивается на всю ширину страницы */
-    z-index: 10000; 
+    z-index: 100; 
     margin: 0% 0%;
     margin: 0;
     position:fixed;
@@ -84,7 +84,6 @@
 @media (min-width: 1200px) {
     .header-bottom a img {
         margin-left: 0%;
-        
     }
 
     .header-bottom {
@@ -94,9 +93,9 @@
         margin-top: 38px;
         padding: 0.5% 5%;
         padding-top: 10px;
-        position: sticky;
+        /* position: sticky; */
         width: 90%;
-        position:fixed;
+        /* position:fixed; */
         z-index: 100;
     }
     .header-bottom .fix {
@@ -115,9 +114,10 @@
         background-color: var(--gsColor01);
         display: flex;
         justify-content: space-between;
-        margin: 0.3% 5%;
-        position: sticky;
-        width: 90%;
+        /* margin: 0.3% 5%; */
+        /* position: sticky; */
+        padding: 10px 0px;
+        width: 100%;
     }
 
 }

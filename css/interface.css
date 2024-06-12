@@ -86,7 +86,26 @@
 }
 
 
+/*  */
 
+@media (max-width: 1085px) {
+    .interface-phone {
+        max-width: 280px;
+
+    }
+}
+@media (max-width: 900px) {
+    .interface-phone {
+        max-width: 250px;
+
+    }
+}
+@media (max-width: 625px) {
+    .interface-phone {
+        max-width: 230px;
+
+    }
+}
 @media (max-width: 375px) {
     .interface-blocks {
         margin-top: 0%;
