@@ -22,7 +22,7 @@
     padding: 20px;
 
     width: 417px;
-    height: 587px;
+    max-height: 587px;
     margin: 7% auto;
     align-items: center;
     justify-content: center;

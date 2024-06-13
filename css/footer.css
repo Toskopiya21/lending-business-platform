@@ -37,8 +37,10 @@
     color: var(--gsColor07);
     cursor: pointer;
 }
+@media (max-width: 1200px) {
 
-@media (max-width: 375px) {
+}
+@media (max-width: 1200px) {
     .footer {
         margin-top: 20px;
         height: 650px;

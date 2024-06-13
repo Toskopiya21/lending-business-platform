@@ -43,7 +43,7 @@
     opacity: 0px;
     background-color: var(--prColor02);
     rotate: -1.69deg;
-    left: 60px;
+    left: 0px;
     top: 100px;
     z-index: -100;
 }

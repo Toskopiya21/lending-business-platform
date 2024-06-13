@@ -34,3 +34,25 @@ window.onclick = function (event) {
     modalSuccessfully.style.display = "none";
   }
 };
+var modalCookies = document.getElementById("modalCookies");
+
+var btnsDeclineCloseCookies = document.getElementById("decline");
+var btnsAcceptCloseCookies = document.getElementById("accept");
+var modalCookies = document.getElementById("modalCookies");
+
+var spanCookies = document.getElementById("closeModalCook");
+
+btnsAcceptCloseCookies.onclick = function () {
+  modalCookies.style.display = "none";
+};
+btnsDeclineCloseCookies.onclick = function () {
+  modalCookies.style.display = "none";
+};
+spanCookies.onclick = function () {
+  modalCookies.style.display = "none";
+};
+
+setTimeout(
+  () => {
+    modalCookies.style.display = "block";
+  }, 1000)

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/modalContact.css">
+    <link rel="stylesheet" href="./css/modalCookies.css">
     <!--[if IE]>
    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -42,14 +43,14 @@
     <div class="wrapper">
         <header>
             <!-- <div class="container"> -->
-                <div class="header-top">
-                    <button class="header-top__btn-active">For Business</button>
-                    <button class="header-top__btn-disable">For Customers</button>
-                </div>
-                <div class="header-bottom">
-                    <a href=""><img src="./img/mainLogo.png" alt="budss"></a>
-                    <button class="header-bottom-ui ui-btn-primary"><span>Contact sales</span></button>
-                    <button class="header-bottom-burger"><img src="./img/burger.png" alt="burger"></button>
+            <div class="header-top">
+                <button class="header-top__btn-active">For Business</button>
+                <button class="header-top__btn-disable">For Customers</button>
+            </div>
+            <div class="header-bottom">
+                <a href=""><img src="./img/mainLogo.png" alt="budss"></a>
+                <button class="header-bottom-ui ui-btn-primary"><span>Contact sales</span></button>
+                <button class="header-bottom-burger"><img src="./img/burger.png" alt="burger"></button>
                 <!-- </div> -->
             </div>
         </header>
@@ -249,6 +250,11 @@
                 <div>
                     <button class="footer-profiles  ui-typography-s5">For Business</button>
                     <button class="footer-profiles  ui-typography-s5">For Customers</button>
+                    <button class="footer-profiles  ui-typography-s5" id='footer-privacy-policy'></button>
+                    <button class="footer-profiles  ui-typography-s5" id='footer-tou-seller'></button>
+                    <button class="footer-profiles  ui-typography-s5" id='footer-tou-sellerCustomers'></button>
+
+
                 </div>
 
                 <button class="footer-bottom-ui ui-btn-primary"><span>Contact sales</span></button>
@@ -261,7 +267,7 @@
             </div>
             <div class="footer-bottom ui-typography-b5">
                 <span>© Copyright 2023, All Rights Reserved by Budss</span>
-                <div>
+                <div id="footer-group">
                     <span>Privacy Policy</span>
                     <span>Terms Of Use - Seller</span>
                     <span>Terms of Use - Sellers & Customers</span>
@@ -330,7 +336,7 @@
                 <span class="close" id="closeModalSuc">&times;</span>
             </div>
             <div class="modal-content__body">
-                <img class="modal-content__body-img"src="./img/successfully.png" alt="">
+                <img class="modal-content__body-img" src="./img/successfully.png" alt="">
                 <p class="modal-content__body-title ui-typography-s1">Thank you!</p>
                 <p class="modal-content__body-massage ui-typography-s3">Thank you, we have received your
                     application and will contact you soon!</p>
@@ -338,11 +344,26 @@
             </div>
         </div>
     </div>
-    </div>
+    
+    <div id="modalCookies" class="modal-cookies">
+        <div  class="modal-cookies-content">
+            <div class="modal-cookies__header">
+                <span class="close" id="closeModalCook">&times;</span>
+            </div>
+            <div class="modal-cookies__body">
+                <p class="modal-cookies__body-title ui-typography-s7">This website uses cookies to ensure you get the best experience on our website. They also allow us to analyze user behavior in order to constantly improve the website for you.</p>
+                <div>
+                    <button class=" modal-content__body-btnAccept" id="accept">Accept</button>
+                    <button class="ui-btn-secondary modal-content__body-btnDecline" id="decline">Decline</button>
+                </div>
 
+            </div>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/validForm.js"></script>
     <script src="./js/fixHeader.js"></script>
+    <script src="./js/adaptiv.js"></script>
 </body>
 
 </html>

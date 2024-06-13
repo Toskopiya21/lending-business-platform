@@ -105,7 +105,7 @@
 
 .whyBudss-cards__row-item__block3 {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     right: 0;
     bottom: 0;
     border-radius: 30px;
@@ -121,7 +121,7 @@
 
 .whyBudss-cards__row-item__block2-1 {
     position: absolute;
-    z-index: 100;
+    z-index: 10;
     left: 20%;
     bottom: 0;
 }

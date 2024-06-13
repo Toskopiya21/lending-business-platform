@@ -80,8 +80,20 @@
 .header-bottom-burger {
     display: none;
 }
-
+.header-bottom-ui{
+    margin-right: 170px;
+}
+@media (min-width: 1600px) {
+    .header-bottom-ui{
+        margin-right: 120px;
+    }
+}
 @media (min-width: 1200px) {
+
+    .header{
+        position: relative;
+        width: 50%;
+    }
     .header-bottom a img {
         margin-left: 0%;
     }
@@ -94,18 +106,19 @@
         padding: 0.5% 5%;
         padding-top: 10px;
         /* position: sticky; */
-        width: 90%;
         /* position:fixed; */
         z-index: 100;
     }
     .header-bottom .fix {
         margin-block-start:-10px;
     }
-    
 
 }
 
 @media (max-width: 1200px) {
+    .header-bottom-ui{
+        margin-right: 20px;
+    }
     .header-bottom a img {
         margin-left: 5%;
     }

@@ -196,6 +196,24 @@
     cursor: pointer;
     border: 0px;
 }
+.ui-btn-secondary{
+        /* height: 57px; */
+        top: 7px;
+        left: 1198px;
+        padding: 16px 30px 16px 30px;
+        gap: 14px;
+        border-radius: 16px;
+        opacity: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 25.2px;
+        text-align: left;
+        color: var(--gsColor00);
+        cursor: pointer;
+        /* border: 2px; */
+        background-color: var(--gsColor07);
+        border-color: var(--prColor01);
+}
 
 .ui-btn-primary:hover {
     background-color: var(--gsColor01);
