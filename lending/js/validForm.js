@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Функция для проверки полей input
   function checkInputs() {
     if (
       nameInput.value.trim() !== "" &&
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Добавляем слушателей событий на поля ввода
   nameInput.addEventListener("input", checkInputs);
   emailInput.addEventListener("input", checkInputs);
   phoneInput.addEventListener("input", checkInputs);

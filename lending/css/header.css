@@ -1,10 +1,7 @@
 .container {
     font-family: var(--fontFamily);
     width: 100%;
-    /* position: fixed;
-    z-index: 1000; */
     position:fixed;
-
 }
 
 .header-top {
@@ -19,7 +16,6 @@
     font-weight: 500;
     text-align: center;
     cursor: pointer;
-
 }
 
 .header-top__btn-active {
@@ -30,7 +26,6 @@
     color: var(--gsColor07);
     background-color: var(--gsColor01);
     border: 0px;
-
 }
 
 .header-top__btn-disable {
@@ -43,15 +38,13 @@
 }
 
 .header-bottom {
-
     background-color: var(--gsColor01);
     display: flex;
     justify-content: space-between;
     position:fixed;
-
-    top: 0; /* Прикрепляем шапку к верху страницы */
-    left: 0; /* Прикрепляем шапку к левому краю страницы */
-    width: 100%; /* Шапка растягивается на всю ширину страницы */
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 100; 
     margin: 0% 0%;
     margin: 0;
@@ -74,7 +67,6 @@
     color: var(--gsColor07);
     cursor: pointer;
     position:fixed;
-
 }
 
 .header-bottom-burger {
@@ -105,14 +97,11 @@
         margin-top: 38px;
         padding: 0.5% 5%;
         padding-top: 10px;
-        /* position: sticky; */
-        /* position:fixed; */
         z-index: 100;
     }
     .header-bottom .fix {
         margin-block-start:-10px;
     }
-
 }
 
 @media (max-width: 1200px) {
@@ -127,8 +116,6 @@
         background-color: var(--gsColor01);
         display: flex;
         justify-content: space-between;
-        /* margin: 0.3% 5%; */
-        /* position: sticky; */
         padding: 10px 0px;
         width: 100%;
     }

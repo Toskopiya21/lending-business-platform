@@ -1,12 +1,10 @@
-// Инициализация переменных
 let currentSlide = 0;
 let isAnimating = false;
-const slides = document.querySelectorAll(".slide"); // Класс .slide должен быть присвоен каждому изображению
+const slides = document.querySelectorAll(".slide");
 const totalSlides = slides.length;
-const nextControl = document.querySelector(".next-control"); // Класс для кнопки "Следующий"
-const indicatorsContainer = document.querySelector(".indicators"); // Контейнер для индикаторов
+const nextControl = document.querySelector(".next-control");
+const indicatorsContainer = document.querySelector(".indicators");
 
-// Функция для создания индикаторов
 function createIndicators() {
   for (let i = 0; i < totalSlides; i++) {
     const indicator = document.createElement("span");
@@ -16,14 +14,12 @@ function createIndicators() {
   }
 }
 
-// Функция для обновления индикаторов
 function updateIndicators() {
   document.querySelectorAll(".indicator").forEach((indicator, index) => {
     indicator.classList.toggle("active", index === currentSlide);
   });
 }
 
-// Функция для перехода к следующему слайду
 function goToNextSlide() {
   if (isAnimating) return;
   isAnimating = true;
@@ -31,7 +27,6 @@ function goToNextSlide() {
   slides[nextSlide].style.left = "100%";
   slides[currentSlide].style.left = 0;
 
-  // Анимация слайдера
   const slideAnimation = setInterval(() => {
     slides[nextSlide].style.left =
       parseInt(slides[nextSlide].style.left, 10) - 2 + "%";
@@ -47,10 +42,8 @@ function goToNextSlide() {
   }, 10);
 }
 
-// Обработчик клика для перехода к следующему слайду
 nextControl.addEventListener("click", goToNextSlide);
 
-// Обработчик клика для индикаторов
 indicatorsContainer.addEventListener("click", (e) => {
   const targetIndicator = e.target;
   if (!targetIndicator.classList.contains("indicator")) return;
@@ -63,7 +56,6 @@ indicatorsContainer.addEventListener("click", (e) => {
   updateIndicators();
 });
 
-// Инициализация слайдера
 function initSlider() {
   createIndicators();
   updateIndicators();

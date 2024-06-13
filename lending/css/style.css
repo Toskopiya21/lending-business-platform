@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-
 body {
     background-color: var(--gsColor01);
     color: var(--gsColor07);
     font-family: var(--fontFamily);
-}
-
-body {
 }
 
 @-webkit-keyframes slideIn {
@@ -53,20 +49,3 @@ body {
         opacity: 1
     }
 }
-/* 
-@media (max-width: 375px) {
-    .interface-blocks {
-        margin-top: 0%;
-    }
-    .interface {
-        margin-top: 0%;
-    }
-    .interface-phone {
-        max-width: 228px;
-        width: auto;
-        height: auto;
-    }
-    .interface-blocks ul li img{
-        width: 140%;
-    }
-} */

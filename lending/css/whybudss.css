@@ -1,10 +1,8 @@
 .whyBudss {
     margin-top: 5%;
     height: 1192px;
-    /* margin-top: 80px; */
     position: relative;
     width: 100vw; 
-    /* height: 100vh;  */
     max-width: 100%; 
     max-height: 100%;
 }
@@ -45,7 +43,6 @@
     background-color: var(--gsColor07);
     border-radius: 30px;
 }
-
 
 .whyBudss-cards span {
     max-width: 420px;
@@ -144,7 +141,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 0px;
-
 }
 
 .whyBudss-cards {
@@ -161,7 +157,6 @@
 .first-row .whyBudss-cards__row-item:nth-child(2) span {
     right: 0;
     margin: 4% 4%;
-
 }
 
 .second-row .whyBudss-cards__row-item:nth-child(1) span {
@@ -176,11 +171,8 @@
 @media (max-width: 1357px) {
     .whyBudss {
         height: 1100px;
-        /* margin-top: 15%; */
-        /* margin-left: 4%; */
         position: relative;
         align-items:center;
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -194,7 +186,6 @@
     }
     .first-row div:first-child {
         max-width: 563px;
-
     }
     
     .first-row div:last-child {
@@ -203,16 +194,12 @@
     
     .second-row div:first-child {
         max-width: 563px;
-
     }
     
     .second-row div:last-child {
         max-width: 563px;
 
     }
-        /* .whyBudss-cards__row-item img {
-        width: 10%;
-    } */
     .whyBudss-cards__row-item__block1 {
         width: 50%;
         top: auto;
@@ -226,15 +213,10 @@
     
     .whyBudss-cards__row-item__block4 {
         width: 29%;
-        /* z-index: 0; */
     }
     
     .whyBudss-cards__row-item__block2-1 {
         width: 15%;
-
-    }
-    
-    .whyBudss-cards__row-item__block2-2 {
 
     }
     
@@ -264,30 +246,22 @@
     
     .second-row div:first-child {
         max-width: 500px;
-
     }
     
     .second-row div:last-child {
         max-width: 500px;
-
     }
     
 }
 @media (max-width: 1150px) {
     .whyBudss {
         height: 900px;
-        /* margin-top: 15%; */
-        /* margin-left: 4%; */
         position: relative;
         align-items:center;
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    /* .whyBudss-cards__row-item img {
-        width: 10%;
-    } */
     .whyBudss-cards__row-item__block1 {
         width: 50%;
         top: auto;
@@ -301,18 +275,12 @@
     
     .whyBudss-cards__row-item__block4 {
         width: 29%;
-        /* z-index: 0; */
     }
     
     .whyBudss-cards__row-item__block2-1 {
         width: 15%;
 
     }
-    
-    .whyBudss-cards__row-item__block2-2 {
-
-    }
-    
     .whyBudss-cards__row-item__block2-3 {
         width: 15%;
         top: 130px;
@@ -339,7 +307,6 @@
     
     .second-row div:first-child {
         max-width: 500px;
-
     }
     
     .second-row div:last-child {
@@ -348,11 +315,8 @@
     }
     .whyBudss {
         height: 1003px;
-        /* margin-top: 15%; */
-        /* margin-left: 4%; */
         position: relative;
         align-items:center;
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -376,12 +340,10 @@
         column-gap: 0px;
         margin-top: 0;
         justify-content: end;
-
     }
 
     .whyBudss-card__item {
         row-gap: 0px;
-
     }
 
     .whyBudss-cards__row div {
@@ -440,11 +402,8 @@
 
     .whyBudss {
         height: 1903px;
-        /* margin-top: 15%; */
-        /* margin-left: 4%; */
         position: relative;
         align-items:center;
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -453,7 +412,6 @@
     .whyBudss-title {
         font-size: 60px;
         font-weight: 700;
-        /* line-height: 42.4px; */
         margin: 0 auto;
         align-items:center;
         text-align: center;
@@ -493,7 +451,6 @@
         font-size: 36px;
         font-weight: 700;
         line-height: 33.92px;
-
     }
 
     .whyBudss-card__item-description {
@@ -501,15 +458,11 @@
         font-size: 20px;
         font-weight: 400;
         line-height: 20.16px;
-
     }
     .whyBudss {
         height: 1780px;
-        /* margin-top: 15%; */
-        /* margin-left: 4%; */
         position: relative;
         align-items:center;
-        /* text-align: center; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -522,28 +475,23 @@
 }
 @media (max-width: 375px) {
 
-
     .whyBudss-card__item-title {
         margin-top: 10px;
         row-gap: 0px;
-
     }
 
     .whyBudss-card__item-description {
         margin-top: 0;
-
     }
 
     .whyBudss-cards__row-item {
         column-gap: 0px;
         margin-top: 0;
         justify-content: end;
-
     }
 
     .whyBudss-card__item {
         row-gap: 0px;
-
     }
 
     .whyBudss-cards__row div {
@@ -645,15 +593,12 @@
         font-size: 32px;
         font-weight: 700;
         line-height: 33.92px;
-
     }
 
     .whyBudss-card__item-description {
-
         font-size: 16px;
         font-weight: 400;
         line-height: 20.16px;
-
     }
 
     .first-row .whyBudss-cards__row-item:nth-child(1) span {
