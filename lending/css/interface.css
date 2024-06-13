@@ -1,0 +1,118 @@
+.interface {
+    margin-top: 5%;
+    height: 636px;
+    position: relative;
+}
+
+.interface-blocks li {
+    margin: 100px 50px;
+    column-gap: 20px;
+}
+
+.interface-phone {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.interface-blocks {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.interface-block-1__active {
+    width: 60%;
+    height: 60%;
+}
+
+.interface-block-1__disable {
+    width: 60%;
+    height: 60%;
+}
+
+.interface-block-2__disable {
+    width: 60%;
+    height: 60%;
+}
+
+.interface-block-3__disable {
+    width: 60%;
+    height: 60%;
+}
+
+
+@keyframes scrollerLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollervRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.interface-block-1 {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollervRight 80s linear infinite;
+}
+
+.interface-block-2 {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollerLeft 80s linear infinite;
+}
+
+.interface-block-3 {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollervRight 80s linear infinite;
+}
+
+@media (max-width: 1085px) {
+    .interface-phone {
+        max-width: 280px;
+    }
+}
+@media (max-width: 900px) {
+    .interface-phone {
+        max-width: 250px;
+    }
+}
+@media (max-width: 625px) {
+    .interface-phone {
+        max-width: 230px;
+    }
+}
+@media (max-width: 375px) {
+    .interface-blocks {
+        margin-top: 0%;
+    }
+    .interface {
+        margin-top: 0%;
+    }
+    .interface-phone {
+        max-width: 228px;
+        width: auto;
+        height: auto;
+    }
+    .interface-blocks ul li img{
+        width: 140%;
+    }
+}
